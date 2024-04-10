@@ -45,7 +45,7 @@ function Notifications() {
   const closeWarningSB = () => setWarningSB(false);
   const openErrorSB = () => setErrorSB(true);
   const closeErrorSB = () => setErrorSB(false);
-
+/*
   const alertContent = (name) => (
     <MDTypography variant="body2" color="white">
       A simple {name} alert with{" "}
@@ -55,7 +55,7 @@ function Notifications() {
       . Give it a click if you like.
     </MDTypography>
   );
-
+*/
   const renderSuccessSB = (
     <MDSnackbar
       color="success"
@@ -115,46 +115,14 @@ function Notifications() {
       <DashboardNavbar />
       <MDBox mt={6} mb={3}>
         <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12} lg={8}>
-            <Card>
-              <MDBox p={2}>
-                <MDTypography variant="h5">Alerts</MDTypography>
-              </MDBox>
-              <MDBox pt={2} px={2}>
-                <MDAlert color="primary" dismissible>
-                  {alertContent("primary")}
-                </MDAlert>
-                <MDAlert color="secondary" dismissible>
-                  {alertContent("secondary")}
-                </MDAlert>
-                <MDAlert color="success" dismissible>
-                  {alertContent("success")}
-                </MDAlert>
-                <MDAlert color="error" dismissible>
-                  {alertContent("error")}
-                </MDAlert>
-                <MDAlert color="warning" dismissible>
-                  {alertContent("warning")}
-                </MDAlert>
-                <MDAlert color="info" dismissible>
-                  {alertContent("info")}
-                </MDAlert>
-                <MDAlert color="light" dismissible>
-                  {alertContent("light")}
-                </MDAlert>
-                <MDAlert color="dark" dismissible>
-                  {alertContent("dark")}
-                </MDAlert>
-              </MDBox>
-            </Card>
-          </Grid>
+          
 
           <Grid item xs={12} lg={8}>
             <Card>
               <MDBox p={2} lineHeight={0}>
-                <MDTypography variant="h5">Notifications</MDTypography>
+                <MDTypography variant="h5">Ingreso base de datos</MDTypography>
                 <MDTypography variant="button" color="text" fontWeight="regular">
-                  Notifications on this page use Toasts from Bootstrap. Read more details here.
+                  Aqui se insertara conexion con base de datos
                 </MDTypography>
               </MDBox>
               <MDBox p={2}>
@@ -195,3 +163,39 @@ function Notifications() {
 }
 
 export default Notifications;
+
+/*
+<Grid item xs={12} lg={8}>
+            <Card>
+              <MDBox p={2}>
+                <MDTypography variant="h5">Alerts</MDTypography>
+              </MDBox>
+              <MDBox pt={2} px={2}>
+                <MDAlert color="primary" dismissible>
+                  {alertContent("primary")}
+                </MDAlert>
+                <MDAlert color="secondary" dismissible>
+                  {alertContent("secondary")}
+                </MDAlert>
+                <MDAlert color="success" dismissible>
+                  {alertContent("success")}
+                </MDAlert>
+                <MDAlert color="error" dismissible>
+                  {alertContent("error")}
+                </MDAlert>
+                <MDAlert color="warning" dismissible>
+                  {alertContent("warning")}
+                </MDAlert>
+                <MDAlert color="info" dismissible>
+                  {alertContent("info")}
+                </MDAlert>
+                <MDAlert color="light" dismissible>
+                  {alertContent("light")}
+                </MDAlert>
+                <MDAlert color="dark" dismissible>
+                  {alertContent("dark")}
+                </MDAlert>
+              </MDBox>
+            </Card>
+          </Grid>
+*/

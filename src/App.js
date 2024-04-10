@@ -108,7 +108,7 @@ export default function App() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   }, [pathname]);
-
+  
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
       if (route.collapse) {
@@ -195,4 +195,5 @@ export default function App() {
       </Routes>
     </ThemeProvider>
   );
+  
 }
