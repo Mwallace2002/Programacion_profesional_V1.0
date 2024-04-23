@@ -26,7 +26,7 @@ import MDTypography from "components/MDTypography";
 import MDAlert from "components/MDAlert";
 import MDButton from "components/MDButton";
 import MDSnackbar from "components/MDSnackbar";
-import BDD from "components/BDD";
+
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -129,7 +129,6 @@ function Notifications() {
                   Aqui se insertara conexion con base de datos
                 </MDTypography>
               </MDBox>
-              <BDD></BDD>
               <MDBox p={2}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6} lg={3}>
