@@ -41,6 +41,11 @@ import BasicLayout from "layouts/authentication/components/BasicLayout";
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
+// BDD
+import { Navbar } from "./components/Navbar";
+import { About } from "./components/About";
+import { Users } from "./components/Users";
+
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
 

@@ -33,6 +33,12 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
+// BDD
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {About} from "./components/About";
+import {Users} from "./components/Users";
+import App from "src/layouts/notifications/app.js";
+
 
 function Notifications() {
   const [successSB, setSuccessSB] = useState(false);
@@ -115,6 +121,7 @@ function Notifications() {
   
 
   return (
+
     <DashboardLayout>
       <DashboardNavbar />
       <MDBox mt={6} mb={3}>
@@ -126,7 +133,14 @@ function Notifications() {
               <MDBox p={2} lineHeight={0}>
                 <MDTypography variant="h5">Ingreso base de datos</MDTypography>
                 <MDTypography variant="button" color="text" fontWeight="regular">
-                  Aqui se insertara conexion con base de datos
+                  <Router>
+                    <div className="container p-4">
+                      <Switch>
+                        <Route path="/about" component={About} />
+                        <Route path="/users" component={Users} />
+                      </Switch>
+                    </div>
+                  </Router>
                 </MDTypography>
               </MDBox>
               <MDBox p={2}>
